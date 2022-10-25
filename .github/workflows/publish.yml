@@ -2,7 +2,6 @@ name: Publish
 
 concurrency: production
 
-# This action should process only on push to 'production' branch
 on:
   push:
     branches:
@@ -23,6 +22,6 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build and Publish with Gradle
         run: ./gradlew clean build publishToMyNexus
-        env: # TODO Configure you own github-secrets
+        env:
           NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
