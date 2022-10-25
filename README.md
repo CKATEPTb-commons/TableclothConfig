@@ -4,7 +4,7 @@
 ------
 
 <p align="center">
-Create configuration files for any of your projects in the most popular formats using just one class for this. It is useful for people with basic understanding of java, gradle, workflow and is designed for lazy people
+Create configuration files for any of your projects in the most popular formats using just one class for this. It is useful for people with basic understanding of java and is designed for lazy people
 </p>
 
 <p align="center">
