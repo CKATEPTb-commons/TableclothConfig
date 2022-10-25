@@ -40,6 +40,7 @@ tasks {
     shadowJar {
         archiveClassifier.set("")
     }
+//    Disabled
     register<ProGuardTask>("shrink") {
         dependsOn(shadowJar)
         injars(shadowJar.get().outputs.files)
